@@ -12,7 +12,7 @@ data "terraform_remote_state" "eks" {
 }
 
 module "eks-alb-ingress" {
-  source  = "mrnim94/eks-alb-ingress/aws"
+  source  = "aws-terraform-module/eks-alb-ingress/aws"
   version = "1.0.7"
 
   aws_region = var.aws_region
